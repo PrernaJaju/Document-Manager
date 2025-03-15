@@ -13,6 +13,7 @@ A simple document management application with CRUD operations using JavaScript a
 ## Installation
 1. Clone the repository:
    ```
+   
    git clone https://github.com/PrernaJaju/Document-Manage
    ```
 2. Open `index.html` in your browser.
