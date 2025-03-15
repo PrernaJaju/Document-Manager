@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Manager Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#upload-section">Upload Document</a></li>
+                    <li><a href="#uploaded-files">Uploaded Files</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <img src="logo.webp" alt="Document Manager Logo" class="logo">
+                <h1>Document Manager</h1>
+            </header>
+            
+            <section id="upload-section" class="upload-container">
+                <h2>Upload a Document</h2>
+                <form id="document-form">
+                    <label for="doc-name">Document Name</label>
+                    <input type="text" id="doc-name" placeholder="Enter document name" required>
+
+                    <label for="doc-description">Description</label>
+                    <textarea id="doc-description" placeholder="Brief description of the document" required></textarea>
+
+                    <label for="doc-file">Upload File</label>
+                    <input type="file" id="doc-file" accept=".pdf,.jpg,.jpeg,.png" required>
+
+                    <button type="submit" class="btn-upload">Upload Document</button>
+                    <button type="reset" class="btn-clear">Clear</button>
+                </form>
+            </section>
+            
+            <section id="uploaded-files" class="files-container">
+                <h2>Uploaded Documents</h2>
+                <ul id="document-list" class="document-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
